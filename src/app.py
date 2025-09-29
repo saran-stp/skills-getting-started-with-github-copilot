@@ -58,6 +58,18 @@ activities = {
         "max_participants": 14,
         "participants": []
     },
+    "Model UN": {
+        "description": "Simulate United Nations debates and learn about international relations",
+        "schedule": "Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 20,
+        "participants": []
+    },
+    "Quiz Bowl": {
+        "description": "Compete in academic quiz competitions covering various subjects",
+        "schedule": "Wednesdays, 3:30 PM - 4:30 PM",
+        "max_participants": 12,
+        "participants": []
+    },
     # Sports
     "Gym Class": {
         "description": "Physical education and sports activities",
@@ -87,6 +99,18 @@ activities = {
         "description": "Practice running, jumping, and throwing events for track meets",
         "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
         "max_participants": 25,
+        "participants": []
+    },
+    "Tennis Club": {
+        "description": "Learn tennis techniques and participate in tournaments",
+        "schedule": "Saturdays, 10:00 AM - 12:00 PM",
+        "max_participants": 18,
+        "participants": []
+    },
+    "Volleyball Team": {
+        "description": "Practice volleyball skills and compete against other schools",
+        "schedule": "Mondays and Fridays, 4:00 PM - 5:30 PM",
+        "max_participants": 14,
         "participants": []
     },
     # Artistic
@@ -119,6 +143,18 @@ activities = {
         "schedule": "Fridays, 3:30 PM - 4:30 PM",
         "max_participants": 18,
         "participants": []
+    },
+    "Dance Club": {
+        "description": "Learn various dance styles and perform at school events",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 22,
+        "participants": []
+    },
+    "Film Club": {
+        "description": "Create short films and learn video production techniques",
+        "schedule": "Saturdays, 1:00 PM - 4:00 PM",
+        "max_participants": 16,
+        "participants": []
     }
 }
 
@@ -146,7 +182,7 @@ def signup_for_activity(activity_name: str, email: str):
     # Validate student is not already signed up
     if email in activity["participants"]:
         raise HTTPException(status_code=400, detail="Student already signed up for this activity")
-    
+
     # Add student
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
