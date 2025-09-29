@@ -46,6 +46,18 @@ activities = {
         "max_participants": 18,
         "participants": []
     },
+    "Debate Team": {
+        "description": "Develop public speaking and argumentation skills through competitive debates",
+        "schedule": "Tuesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 16,
+        "participants": []
+    },
+    "Robotics Club": {
+        "description": "Build and program robots for competitions and demonstrations",
+        "schedule": "Saturdays, 9:00 AM - 12:00 PM",
+        "max_participants": 14,
+        "participants": []
+    },
     # Sports
     "Gym Class": {
         "description": "Physical education and sports activities",
@@ -65,6 +77,18 @@ activities = {
         "max_participants": 16,
         "participants": []
     },
+    "Swimming Team": {
+        "description": "Train for swimming competitions and improve stroke techniques",
+        "schedule": "Mondays and Wednesdays, 6:00 AM - 7:30 AM",
+        "max_participants": 20,
+        "participants": []
+    },
+    "Track and Field": {
+        "description": "Practice running, jumping, and throwing events for track meets",
+        "schedule": "Tuesdays and Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 25,
+        "participants": []
+    },
     # Artistic
     "Art Club": {
         "description": "Explore painting, drawing, and other visual arts",
@@ -82,6 +106,18 @@ activities = {
         "description": "Join the school band or choir and perform at events",
         "schedule": "Mondays, 4:00 PM - 5:30 PM",
         "max_participants": 30,
+        "participants": []
+    },
+    "Photography Club": {
+        "description": "Learn photography techniques and create stunning visual stories",
+        "schedule": "Saturdays, 2:00 PM - 4:00 PM",
+        "max_participants": 15,
+        "participants": []
+    },
+    "Creative Writing": {
+        "description": "Develop writing skills through poetry, short stories, and creative expression",
+        "schedule": "Fridays, 3:30 PM - 4:30 PM",
+        "max_participants": 18,
         "participants": []
     }
 }
